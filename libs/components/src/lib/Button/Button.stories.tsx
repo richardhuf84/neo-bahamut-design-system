@@ -7,7 +7,9 @@ export default {
   component: NBButton,
 } as ComponentMeta<typeof NBButton>;
 
-const Template: ComponentStory<typeof NBButton> = (args) => <NBButton {...args} />;
+const Template: ComponentStory<typeof NBButton> = (args) => (
+  <NBButton {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {

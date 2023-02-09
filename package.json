@@ -7,6 +7,9 @@
       "pre-commit": "prettier --write . && git add -A ."
     }
   },
+  "lint-staged": {
+    "*": "prettier --write"
+  },
   "scripts": {
     "start": "nx run neo-bahamut-dsm:serve:development",
     "storybook": "nx run neo-bahamut-dsm:storybook",
@@ -71,7 +74,6 @@
     "husky": "^8.0.3",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
-    "lint-staged": "^13.1.1",
     "nx": "15.6.3",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",

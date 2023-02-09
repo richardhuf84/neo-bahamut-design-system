@@ -10,15 +10,19 @@ export interface NBButtonProps {
 
 const StyledButton = styled.button<NBButtonProps>`
   appearance: none;
-  background-color: ${props => props.kind === 'primary' ? 'teal' : 'navy'};
+  background-color: ${(props) => (props.kind === 'primary' ? 'teal' : 'navy')};
   border: none;
   border-radius: 0.25rem;
   color: white;
   padding: 0.75rem;
-`; 
+`;
 
-export const NBButton = forwardRef<HTMLButtonElement, NBButtonProps>(({ children,
-  kind = 'primary',
-  ...props }, ref) => (
-  <StyledButton kind={kind} {...props} ref={ref} >{children}</StyledButton>
-));
+export const NBButton = forwardRef<HTMLButtonElement, NBButtonProps>(
+  ({
+    children,
+        kind = 'primary', ...props }, ref) => (
+    <StyledButton kind={kind} {...props} ref={ref}>
+      {children}
+    </StyledButton>
+  )
+);
