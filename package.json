@@ -11,9 +11,10 @@
     "*": "yarn format"
   },
   "scripts": {
-    "setup": "husky install",
+    "prepare": "husky install",
     "start": "nx run neo-bahamut-dsm:serve:development",
     "storybook": "nx run neo-bahamut-dsm:storybook",
+    "test": "echo 'test'",
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
