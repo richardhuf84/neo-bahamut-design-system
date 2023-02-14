@@ -8,3 +8,14 @@
 apps/neo-bahamut-dsm/.next
 
 .prettierignore
+.prettierrc
+jest.config.ts
+nx.json
+package.json
+.storybook/*
+**/.eslintrc.json
+**/jest.config.ts
+**/next.config.js
+**/*.json
+**/*.css
+**/cypress.config.ts
