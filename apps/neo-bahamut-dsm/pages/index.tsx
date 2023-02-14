@@ -9,7 +9,7 @@ const StyledPage = styled.div`
 export const Index = () => (
   <StyledPage>
     <NBButton>Primary button</NBButton>
-    <NBButton kind="secondary">Secondary button</NBButton>
+    <NBButton kinds="secondary">Secondary button</NBButton>
   </StyledPage>
 );
 
