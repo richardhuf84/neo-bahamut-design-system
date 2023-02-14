@@ -27,7 +27,10 @@ export const NBButton = forwardRef<HTMLButtonElement, NBButtonProps>(
     },
     ref
   ) => (
-    <StyledButton kind={kind} {...props} ref={ref}>
+    <StyledButton
+      kind={kind}
+      
+          {...props} ref={ref}>
       {children}
     </StyledButton>
   )
