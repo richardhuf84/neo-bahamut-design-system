@@ -8,7 +8,7 @@ module.exports = {
   stories: [
     ...rootMain.stories,
     '../../../libs/components/**/*.stories.mdx',
-    '../../../libs/components/**/*.stories.@(js|jsx|ts|tsx)',
+    '../../../libs/components/**/*.stories.@(js|jsx|ts|tsx)'
   ],
   addons: [
     ...rootMain.addons,
@@ -18,12 +18,12 @@ module.exports = {
     {
       name: 'storybook-addon-next',
       options: {
-        nextConfigPath: path.resolve(__dirname, '../next.config.js'),
-      },
-    },
+        nextConfigPath: path.resolve(__dirname, '../next.config.js')
+      }
+    }
   ],
   features: {
-    previewMdx2: true,
+    previewMdx2: true
   },
   webpackFinal: async (config, { configType }) => {
     // apply any global webpack configs that might have been specified in .storybook/main.js
@@ -34,5 +34,5 @@ module.exports = {
     // add your own webpack tweaks if needed
 
     return config;
-  },
+  }
 };

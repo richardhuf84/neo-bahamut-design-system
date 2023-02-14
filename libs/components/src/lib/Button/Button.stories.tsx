@@ -4,20 +4,18 @@ import { NBButton, type NBButtonProps } from './Button';
 
 export default {
   title: 'Components/Atoms/Button',
-  component: NBButton,
+  component: NBButton
 } as ComponentMeta<typeof NBButton>;
 
-const Template: ComponentStory<typeof NBButton> = (args) => (
-  <NBButton {...args} />
-);
+const Template: ComponentStory<typeof NBButton> = (args) => <NBButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: 'Button',
+  children: 'Button'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   kind: 'secondary',
-  children: 'Button',
+  children: 'Button'
 };
