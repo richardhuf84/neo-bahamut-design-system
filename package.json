@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "lint-staged": {
-    "*": "yarn lint && yarn format"
+    "*.{ts,js,tsx,jsx,mdx}": "yarn lint && yarn format"
   },
   "scripts": {
     "prepare": "husky install",
