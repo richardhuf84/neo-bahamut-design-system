@@ -3,3 +3,8 @@
 /dist
 /coverage
 .history
+
+# app
+apps/neo-bahamut-dsm/.next
+
+.prettierignore

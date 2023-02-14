@@ -18,11 +18,18 @@ const StyledButton = styled.button<NBButtonProps>`
 `;
 
 export const NBButton = forwardRef<HTMLButtonElement, NBButtonProps>(
-  ({ children, kind = 'primary',
+  (
+    {
+     
+     
+     
+      children,
+      kind = 'primary',
 
-
-
-    ...props }, ref) => (
+      ...props
+    },
+    ref
+  ) => (
     <StyledButton kind={kind} {...props} ref={ref}>
       {children}
     </StyledButton>

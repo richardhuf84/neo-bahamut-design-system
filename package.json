@@ -2,20 +2,15 @@
   "name": "neo-bahamut-ds",
   "version": "0.0.0",
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
-    "*": "yarn format"
+    "*": "yarn lint && yarn format"
   },
   "scripts": {
     "prepare": "husky install",
     "start": "nx run neo-bahamut-dsm:serve:development",
     "storybook": "nx run neo-bahamut-dsm:storybook",
     "test": "echo 'test'",
-    "lint": "prettier --check .",
+    "lint": "nx run-many --target=lint",
     "format": "prettier --write ."
   },
   "private": true,
